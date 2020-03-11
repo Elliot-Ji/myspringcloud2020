@@ -45,4 +45,14 @@ public class PaymentController {
         }
     }
 
+    /**
+     * 测试自定义的轮询算法
+     * @return
+     */
+    @GetMapping("/payment/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
+
+
 }
